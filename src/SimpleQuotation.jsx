@@ -1,6 +1,6 @@
-import quotes from './data.js'
+import {quotes} from './data.js'
 
-function SimpleQuotation({quoteId}) {
+function SimpleQuotation({quoteId}) {   console.log(quotes);
     let index = quotes.findIndex(quote => quote.id==quoteId)
 
     return <blockquote>

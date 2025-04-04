@@ -17,28 +17,28 @@ const quotes = [
     {
         id: 1,
         quote: "Q1",
-        author: authors.bob,
+        author: authors.bob.name,
     },
     {
         id: 2,
         quote: "Q2",
-        author: authors.fred,
+        author: authors.fred.name,
     },
     {
         id: 3,
         quote: "Q3",
-        author: authors.bob,
+        author: authors.bob.name,
     },
     {
         id: 4,
         quote: "Q4",
-        author: authors.lydia,
+        author: authors.lydia.name,
     },
     {
         id: 5,
         quote: "Q5",
-        author: authors.lydia,
+        author: authors.lydia.name,
     },
 ];
 
-export default quotes
+export {quotes, authors}

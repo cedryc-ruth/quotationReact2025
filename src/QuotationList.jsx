@@ -1,5 +1,5 @@
 import SimpleQuotation from './SimpleQuotation.jsx';
-import quotes from './data.js'
+import {quotes} from './data.js'
 
 function QuotationList({shuffle, author, count}) {
     //Filtrer par auteur

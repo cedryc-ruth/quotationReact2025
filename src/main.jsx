@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import Message from './Message.jsx'
 import SimpleQuotation from './SimpleQuotation.jsx'
 import QuotationList from './QuotationList.jsx'
+import RandomQuotation from './RandomQuotation.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -33,5 +34,9 @@ createRoot(document.getElementById('root')).render(
     <QuotationList count="1" />
     <h2>Count - 0</h2>
     <QuotationList count="0" />
+
+    <hr />
+    <h2>RandomQuotation</h2>
+    <RandomQuotation />
   </StrictMode>,
 )
