@@ -1,7 +1,7 @@
 import SimpleQuotation from './SimpleQuotation.jsx';
 import {quotes} from './data.js'
 
-function QuotationList({shuffle, author, count}) {
+function QuotationList({shuffle, author, count, displayPicture}) {
     //Filtrer par auteur
     //console.log(author)
     let filteredQuotes = author
@@ -17,7 +17,7 @@ function QuotationList({shuffle, author, count}) {
     let cpt = filteredQuotes.length;
 
     return <>
-        { filteredQuotes.map(quote => <SimpleQuotation key={quote.id} quoteId={quote.id} />) }
+        { filteredQuotes.map(quote => <SimpleQuotation key={quote.id} quoteId={quote.id} displayPicture={displayPicture} />) }
         { (count==undefined || count>1) && <p>Total : {count || cpt}</p> }
     </>;
 /*  Solution 2
